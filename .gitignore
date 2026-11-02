@@ -1,0 +1,7 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+chroma_db/
+bm25_index.pkl
+*.py[cod]

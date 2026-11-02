@@ -1,0 +1,17 @@
+[
+  {"question":"What is retrieval augmented generation?", "expected_source":"sample_ai.pdf", "expected_page":1},
+  {"question":"What is a language model?", "expected_source":"sample_ai.pdf", "expected_page":1},
+  {"question":"What does tokenization do?", "expected_source":"sample_ai.pdf", "expected_page":1},
+  {"question":"What is an embedding?", "expected_source":"sample_ai.pdf", "expected_page":1},
+  {"question":"How does a vector database help?", "expected_source":"sample_ai.pdf", "expected_page":1},
+  {"question":"What is a solar photovoltaic panel?", "expected_source":"sample_energy.pdf", "expected_page":1},
+  {"question":"What is an inverter used for in a solar system?", "expected_source":"sample_energy.pdf", "expected_page":1},
+  {"question":"What affects solar panel output?", "expected_source":"sample_energy.pdf", "expected_page":1},
+  {"question":"What is battery storage for?", "expected_source":"sample_energy.pdf", "expected_page":1},
+  {"question":"Why does shading matter?", "expected_source":"sample_energy.pdf", "expected_page":1},
+  {"question":"What is a watershed?", "expected_source":"sample_climate.pdf", "expected_page":1},
+  {"question":"What does urban heat island mean?", "expected_source":"sample_climate.pdf", "expected_page":1},
+  {"question":"What is climate adaptation?", "expected_source":"sample_climate.pdf", "expected_page":1},
+  {"question":"How do trees cool a city?", "expected_source":"sample_climate.pdf", "expected_page":1},
+  {"question":"What is stormwater runoff?", "expected_source":"sample_climate.pdf", "expected_page":1}
+]

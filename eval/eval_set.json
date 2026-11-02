@@ -1,0 +1,370 @@
+[
+  {
+    "question": "What BLEU score did the Transformer achieve on WMT 2014 English-to-German?",
+    "expected_source": "attention_is_all_you_need_1706.03762.pdf",
+    "expected_page": 1,
+    "acceptable_pages": [
+      8
+    ],
+    "type": "keyword",
+    "supporting_text": "Our model achieves 28.4 BLEU on the WMT 2014 English- to-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU.",
+    "split": "dev"
+  },
+  {
+    "question": "How many parallel attention heads does the Transformer use, and what are the key and value dimensions per head?",
+    "expected_source": "attention_is_all_you_need_1706.03762.pdf",
+    "expected_page": 5,
+    "type": "keyword",
+    "supporting_text": "In this work we employ h = 8 parallel attention layers, or heads. For each of these we use dk = dv = dmodel/h = 64.",
+    "split": "dev"
+  },
+  {
+    "question": "Why is self-attention easier to parallelize than recurrent layers?",
+    "expected_source": "attention_is_all_you_need_1706.03762.pdf",
+    "expected_page": 6,
+    "type": "paraphrase",
+    "supporting_text": "As noted in Table 1, a self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations.",
+    "split": "dev"
+  },
+  {
+    "question": "How many layers, hidden units, and attention heads does BERT-BASE have?",
+    "expected_source": "bert_1810.04805.pdf",
+    "expected_page": 3,
+    "type": "keyword",
+    "supporting_text": "We primarily report results on two model sizes: BERTBASE (L=12, H=768, A=12, Total Param- eters=110M) and BERTLARGE (L=24, H=1024, A=16, Total Parameters=340M).",
+    "split": "dev"
+  },
+  {
+    "question": "How does BERT learn from sentences where some words are hidden?",
+    "expected_source": "bert_1810.04805.pdf",
+    "expected_page": 4,
+    "type": "paraphrase",
+    "supporting_text": "In order to train a deep bidirectional representa- tion, we simply mask some percentage of the input tokens at random, and then predict those masked tokens.",
+    "split": "dev"
+  },
+  {
+    "question": "What pre-training task teaches BERT whether one sentence follows another?",
+    "expected_source": "bert_1810.04805.pdf",
+    "expected_page": 4,
+    "acceptable_pages": [
+      2,
+      8,
+      13
+    ],
+    "type": "paraphrase",
+    "supporting_text": "In order to train a model that understands sentence rela- tionships, we pre-train for a binarized next sen- tence prediction task that can be trivially gener- ated from any monolingual corpus.",
+    "split": "dev"
+  },
+  {
+    "question": "What top-5 error did the ensemble of residual networks achieve on the ImageNet test set?",
+    "expected_source": "resnet_1512.03385.pdf",
+    "expected_page": 2,
+    "acceptable_pages": [
+      7
+    ],
+    "type": "keyword",
+    "supporting_text": "Our ensemble has 3.57% top-5 error on the ImageNet test set, and won the 1st place in the ILSVRC 2015 classiﬁcation competition.",
+    "split": "dev"
+  },
+  {
+    "question": "How many layers did the deepest ResNet evaluated on CIFAR-10 have?",
+    "expected_source": "resnet_1512.03385.pdf",
+    "expected_page": 8,
+    "acceptable_pages": [
+      7
+    ],
+    "type": "keyword",
+    "supporting_text": "We set n = 200 that leads to a 1202-layer network, which is trained as described above.",
+    "split": "dev"
+  },
+  {
+    "question": "Why can adding more layers to a plain network make its training accuracy worse?",
+    "expected_source": "resnet_1512.03385.pdf",
+    "expected_page": 3,
+    "acceptable_pages": [
+      1,
+      2
+    ],
+    "type": "paraphrase",
+    "supporting_text": "The degradation problem suggests that the solvers might have difﬁculties in approximating identity mappings by multiple nonlinear layers.",
+    "split": "dev"
+  },
+  {
+    "question": "What default values does Adam suggest for alpha, beta1, beta2, and epsilon?",
+    "expected_source": "adam_1412.6980.pdf",
+    "expected_page": 2,
+    "type": "keyword",
+    "supporting_text": "Good default settings for the tested machine learning problems are α = 0.001, β1 = 0.9, β2 = 0.999 and ϵ = 10−8.",
+    "split": "dev"
+  },
+  {
+    "question": "What does Adam do to account for the early zero-initialization bias in its moment estimates?",
+    "expected_source": "adam_1412.6980.pdf",
+    "expected_page": 2,
+    "acceptable_pages": [
+      3
+    ],
+    "type": "paraphrase",
+    "supporting_text": "The good news is that this initialization bias can be easily counteracted, resulting in bias-corrected estimates bmt and bvt.",
+    "split": "dev"
+  },
+  {
+    "question": "What are the names of the two RAG formulations compared in the paper?",
+    "expected_source": "rag_2005.11401.pdf",
+    "expected_page": 3,
+    "acceptable_pages": [
+      4
+    ],
+    "type": "keyword",
+    "supporting_text": "In one approach, RAG-Sequence, the model uses the same document to predict each target token. The second approach, RAG-Token, can predict each target token based on a different document.",
+    "split": "dev"
+  },
+  {
+    "question": "What is the difference between using one retrieved document for an entire answer and using different documents for its generated words?",
+    "expected_source": "rag_2005.11401.pdf",
+    "expected_page": 3,
+    "acceptable_pages": [
+      4
+    ],
+    "type": "paraphrase",
+    "supporting_text": "In one approach, RAG-Sequence, the model uses the same document to predict each target token. The second approach, RAG-Token, can predict each target token based on a different document.",
+    "split": "dev"
+  },
+  {
+    "question": "By what factor does LoRA reduce GPT-3 175B trainable parameters compared with full fine-tuning?",
+    "expected_source": "lora_2106.09685.pdf",
+    "expected_page": 1,
+    "type": "keyword",
+    "supporting_text": "Compared to GPT-3 175B ﬁne-tuned with Adam, LoRA can reduce the number of trainable parameters by 10,000 times and the GPU memory requirement by 3 times.",
+    "split": "dev"
+  },
+  {
+    "question": "Which Transformer weight matrices did the paper apply LoRA to in most experiments?",
+    "expected_source": "lora_2106.09685.pdf",
+    "expected_page": 6,
+    "acceptable_pages": [
+      10
+    ],
+    "type": "keyword",
+    "supporting_text": "As mentioned in Section 4.2, we only apply LoRA to Wq and Wv in most experiments for simplicity.",
+    "split": "dev"
+  },
+  {
+    "question": "How can a large pre-trained model be adapted to a new task by training only a small number of extra weights?",
+    "expected_source": "lora_2106.09685.pdf",
+    "expected_page": 1,
+    "acceptable_pages": [
+      2,
+      6
+    ],
+    "type": "paraphrase",
+    "supporting_text": "We propose Low-Rank Adaptation, or LoRA, which freezes the pre- trained model weights and injects trainable rank decomposition matrices into each layer of the Transformer architecture, greatly reducing the number of trainable pa- rameters for downstream tasks.",
+    "split": "dev"
+  },
+  {
+    "question": "What algorithm does XGBoost propose for sparse data?",
+    "expected_source": "xgboost_1603.02754.pdf",
+    "expected_page": 1,
+    "acceptable_pages": [
+      2
+    ],
+    "type": "keyword",
+    "supporting_text": "We propose a novel sparsity-aware algorithm for sparse data and weighted quan- tile sketch for approximate tree learning.",
+    "split": "dev"
+  },
+  {
+    "question": "How does XGBoost decide which branch receives an instance when its split feature is missing?",
+    "expected_source": "xgboost_1603.02754.pdf",
+    "expected_page": 5,
+    "acceptable_pages": [
+      4
+    ],
+    "type": "paraphrase",
+    "supporting_text": "The presented algorithm treats the non-presence as a missing value and learns the best direction to handle missing values.",
+    "split": "dev"
+  },
+  {
+    "question": "How many times fewer training steps did batch-normalized Inception need to match the original Inception's accuracy?",
+    "expected_source": "batch_normalization_1502.03167.pdf",
+    "expected_page": 1,
+    "acceptable_pages": [
+      7
+    ],
+    "type": "keyword",
+    "supporting_text": "Applied to a state-of-the-art image classiﬁcation model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a signiﬁcant margin.",
+    "split": "dev"
+  },
+  {
+    "question": "Why can normalizing each layer's activations allow much higher learning rates?",
+    "expected_source": "batch_normalization_1502.03167.pdf",
+    "expected_page": 2,
+    "acceptable_pages": [
+      1,
+      5,
+      6
+    ],
+    "type": "paraphrase",
+    "supporting_text": "Batch Normalization also has a beneﬁcial effect on the gradient ﬂow through the network, by reducing the dependence of gradients on the scale of the parameters or of their initial values. This allows us to use much higher learning rates with- out the risk of divergence.",
+    "split": "dev"
+  },
+  {
+    "question": "How many warmup steps were used for the Transformer training schedule?",
+    "expected_source": "attention_is_all_you_need_1706.03762.pdf",
+    "expected_page": 7,
+    "type": "keyword",
+    "split": "dev",
+    "supporting_text": "We used warmup_steps = 4000."
+  },
+  {
+    "question": "What signal is added to token embeddings so the model can represent sequence order?",
+    "expected_source": "attention_is_all_you_need_1706.03762.pdf",
+    "expected_page": 6,
+    "type": "paraphrase",
+    "split": "test",
+    "supporting_text": "To this end, we add \"positional encodings\" to the input embeddings at the bottoms of the encoder and decoder stacks."
+  },
+  {
+    "question": "What dropout rate did the base model use?",
+    "expected_source": "attention_is_all_you_need_1706.03762.pdf",
+    "expected_page": 8,
+    "type": "keyword",
+    "split": "dev",
+    "supporting_text": "For the base model, we use a rate of Pdrop = 0.1."
+  },
+  {
+    "question": "How large were the two text corpora used for pre-training, in words?",
+    "expected_source": "bert_1810.04805.pdf",
+    "expected_page": 5,
+    "type": "keyword",
+    "split": "test",
+    "supporting_text": "For the pre-training corpus we use the BooksCorpus (800M words) (Zhu et al., 2015) and English Wikipedia (2,500M words)."
+  },
+  {
+    "question": "During the denoising objective, what fraction of subword units is selected for prediction?",
+    "expected_source": "bert_1810.04805.pdf",
+    "expected_page": 4,
+    "type": "paraphrase",
+    "split": "dev",
+    "supporting_text": "In all of our experiments, we mask 15% of all WordPiece to- kens in each sequence at random."
+  },
+  {
+    "question": "At the beginning and boundary between paired inputs, what roles do BERT’s two markers have?",
+    "expected_source": "bert_1810.04805.pdf",
+    "expected_page": 3,
+    "type": "paraphrase",
+    "split": "dev",
+    "supporting_text": "[CLS] is a special symbol added in front of every input example, and [SEP] is a special separator token (e.g. separating ques- tions/answers)."
+  },
+  {
+    "question": "How deep is the largest ImageNet residual network, and how does its complexity compare with VGG?",
+    "expected_source": "resnet_1512.03385.pdf",
+    "expected_page": 7,
+    "type": "keyword",
+    "split": "dev",
+    "supporting_text": "Remarkably, although the depth is signiﬁcantly increased, the 152-layer ResNet (11.3 billion FLOPs) still has lower complexity than VGG-16/19 nets (15.3/19.6 bil- lion FLOPs)."
+  },
+  {
+    "question": "What type of link lets a block pass its input forward to be combined with the block output?",
+    "expected_source": "resnet_1512.03385.pdf",
+    "expected_page": 2,
+    "type": "paraphrase",
+    "split": "test",
+    "supporting_text": "In our case, the shortcut connections simply perform identity mapping, and their outputs are added to the outputs of the stacked layers (Fig. 2)."
+  },
+  {
+    "question": "Which two earlier optimization methods are cited as providing complementary advantages to Adam?",
+    "expected_source": "adam_1412.6980.pdf",
+    "expected_page": 10,
+    "type": "keyword",
+    "split": "dev",
+    "supporting_text": "The method combines the advantages of two recently popular optimization methods: the ability of AdaGrad to deal with sparse gradients, and the ability of RMSProp to deal with non-stationary objectives."
+  },
+  {
+    "question": "How does Adam form a reliable estimate of gradient magnitude when updates are infrequent?",
+    "expected_source": "adam_1412.6980.pdf",
+    "expected_page": 3,
+    "type": "paraphrase",
+    "split": "dev",
+    "supporting_text": "In case of sparse gradients, for a reliable estimate of the second moment one needs to average over many gradients by chosing a small value of β2; however it is exactly this case of small β2 where a lack of initialisation bias correction would lead to initial steps that are much larger."
+  },
+  {
+    "question": "Which pre-trained sequence-to-sequence model is used as the generator?",
+    "expected_source": "rag_2005.11401.pdf",
+    "expected_page": 3,
+    "type": "keyword",
+    "split": "test",
+    "supporting_text": "We use BART-large [32], a pre-trained seq2seq transformer [58] with 400M parameters."
+  },
+  {
+    "question": "How can the model’s external knowledge be refreshed without further training the generator?",
+    "expected_source": "rag_2005.11401.pdf",
+    "expected_page": 8,
+    "type": "paraphrase",
+    "split": "dev",
+    "supporting_text": "This shows we can update RAG’s world knowledge by simply replacing its non-parametric memory."
+  },
+  {
+    "question": "How many retrieved latent documents were used to train the models in the experiments?",
+    "expected_source": "rag_2005.11401.pdf",
+    "expected_page": 8,
+    "type": "keyword",
+    "split": "dev",
+    "supporting_text": "Models are trained with either 5 or 10 retrieved latent documents, and we do not observe signiﬁcant differences in performance between them."
+  },
+  {
+    "question": "From 1.2 TB to how much GPU memory did LoRA reduce training consumption for GPT-3 175B?",
+    "expected_source": "lora_2106.09685.pdf",
+    "expected_page": 5,
+    "type": "keyword",
+    "split": "dev",
+    "supporting_text": "On GPT-3 175B, we reduce the VRAM consumption during training from 1.2TB to 350GB."
+  },
+  {
+    "question": "Why can the extra trainable matrices be omitted from the computation at prediction time without adding delay?",
+    "expected_source": "lora_2106.09685.pdf",
+    "expected_page": 2,
+    "type": "paraphrase",
+    "split": "test",
+    "supporting_text": "Our simple linear design allows us to merge the trainable matrices with the frozen weights when deployed, introducing no inference latency compared to a fully ﬁne-tuned model, by construction."
+  },
+  {
+    "question": "What procedure does XGBoost propose for calculating candidate splits using instance weights?",
+    "expected_source": "xgboost_1603.02754.pdf",
+    "expected_page": 2,
+    "type": "keyword",
+    "split": "dev",
+    "supporting_text": "We propose a theoretically justiﬁed weighted quantile sketch for eﬃcient proposal calculation."
+  },
+  {
+    "question": "What is the first additional technique the paper lists for preventing overfitting?",
+    "expected_source": "xgboost_1603.02754.pdf",
+    "expected_page": 3,
+    "type": "paraphrase",
+    "split": "dev",
+    "supporting_text": "The ﬁrst technique is shrinkage introduced by Fried- man [11]."
+  },
+  {
+    "question": "What top-5 error did the batch-normalized ensemble reach on the ImageNet test set?",
+    "expected_source": "batch_normalization_1502.03167.pdf",
+    "expected_page": 8,
+    "type": "keyword",
+    "split": "test",
+    "supporting_text": "*BN-Inception ensemble has reached 4.82% top-5 error on the 100000 images of the test set of the ImageNet as reported by the test server."
+  },
+  {
+    "question": "What regularization method can batch normalization sometimes make unnecessary?",
+    "expected_source": "batch_normalization_1502.03167.pdf",
+    "expected_page": 1,
+    "type": "paraphrase",
+    "split": "dev",
+    "supporting_text": "It also acts as a regu- larizer, in some cases eliminating the need for Dropout."
+  },
+  {
+    "question": "How do the two learned values modify each normalized activation?",
+    "expected_source": "batch_normalization_1502.03167.pdf",
+    "expected_page": 3,
+    "type": "paraphrase",
+    "split": "dev",
+    "supporting_text": "To accomplish this, we introduce, for each activation x(k), a pair of parameters γ(k), β(k), which scale and shift the normalized value: y(k) = γ(k)bx(k) + β(k)."
+  }
+]
